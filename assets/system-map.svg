@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 680" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa de actores y flujos del suministro de agua doméstica en Iztapalapa</title>
+  <desc id="desc">Conagua aporta agua en bloque a SEGIAGUA, que opera red y tanques. La Alcaldía coordina la distribución gratuita por pipas durante interrupciones. Los hogares reciben agua por red o pipa y presentan reportes. Los recursos públicos financian las pipas. Las estadísticas agregadas de cobertura y volumen no captan la continuidad experimentada por cada hogar.</desc>
+  <defs>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1L9 5L1 9Z" fill="#126c70"/></marker>
+    <marker id="arrow-coral" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1L9 5L1 9Z" fill="#d66d52"/></marker>
+    <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1L9 5L1 9Z" fill="#b58a3b"/></marker>
+    <style>
+      .bg{fill:#eff1e9}
+      .grid{stroke:#dce3d9;stroke-width:1}
+      .node{fill:#fffefa;stroke:#bccfc6;stroke-width:1.5}
+      .node-dark{fill:#173b42;stroke:#173b42;stroke-width:1.5}
+      .node-alt{fill:#e2eee9;stroke:#b2d2c5;stroke-width:1.5}
+      .kicker{font:700 11px Arial,Helvetica,sans-serif;letter-spacing:1.6px;fill:#126c70}
+      .kicker-light{fill:#9ed9d0}
+      .heading{font:400 25px Georgia,serif;fill:#17343a}
+      .heading-light{fill:#fffefa}
+      .body{font:14px Arial,Helvetica,sans-serif;fill:#52646a}
+      .body-light{fill:#d8e8e3}
+      .flow{fill:none;stroke:#126c70;stroke-width:2.5;marker-end:url(#arrow-teal)}
+      .flow-coral{fill:none;stroke:#d66d52;stroke-width:2.5;marker-end:url(#arrow-coral)}
+      .flow-gold{fill:none;stroke:#b58a3b;stroke-width:2.5;marker-end:url(#arrow-gold)}
+      .flow-dash{fill:none;stroke:#126c70;stroke-width:2;stroke-dasharray:6 5;marker-end:url(#arrow-teal)}
+      .label{font:700 11px Arial,Helvetica,sans-serif;letter-spacing:.6px;fill:#37636a}
+      .label-coral{fill:#ad553d}
+      .label-gold{fill:#957032}
+      .badge{fill:#eff1e9}
+    </style>
+  </defs>
+  <rect class="bg" width="1180" height="680"/>
+  <path class="grid" d="M0 236H1180M0 446H1180"/>
+  <text class="kicker" x="60" y="43">ACTORES · AGUA, DECISIONES Y DATOS</text>
+  <text class="body" x="875" y="43">Diagrama interpretativo · 2026</text>
+
+  <!-- Flujos detrás de los nodos -->
+  <path class="flow" d="M305 138H465"/>
+  <text class="label" x="324" y="122">AGUA EN BLOQUE</text>
+  <path class="flow-dash" d="M710 138H870"/>
+  <text class="label" x="725" y="122">COORDINACIÓN</text>
+  <path class="flow" d="M587 185V306"/>
+  <rect class="badge" x="596" y="226" width="93" height="21"/>
+  <text class="label" x="602" y="241">OPERA / REPARA</text>
+  <path class="flow-coral" d="M992 185V306"/>
+  <rect class="badge" x="1002" y="225" width="120" height="23"/>
+  <text class="label label-coral" x="1008" y="241">PROGRAMA / VIGILA</text>
+  <path class="flow" d="M587 400V506"/>
+  <rect class="badge" x="598" y="441" width="101" height="22"/>
+  <text class="label" x="604" y="456">AGUA DE RED</text>
+  <path class="flow-coral" d="M870 355H795V553H710"/>
+  <rect class="badge" x="722" y="468" width="117" height="22"/>
+  <text class="label label-coral" x="728" y="483">REPARTO DE AGUA</text>
+  <path class="flow-gold" d="M992 506V400"/>
+  <rect class="badge" x="1004" y="447" width="104" height="22"/>
+  <text class="label label-gold" x="1010" y="462">FINANCIA VIAJES</text>
+  <path class="flow-dash" d="M305 554H465"/>
+  <rect class="badge" x="313" y="527" width="141" height="23"/>
+  <text class="label" x="319" y="543">BRECHA DE MEDICIÓN</text>
+  <path class="flow-dash" d="M587 601V631H1137V138H1115"/>
+  <rect class="badge" x="745" y="610" width="157" height="23"/>
+  <text class="label" x="751" y="626">SOLICITUDES Y REPORTES</text>
+
+  <!-- Fila institucional -->
+  <g>
+    <rect class="node" x="60" y="90" width="245" height="95" rx="2"/>
+    <rect x="60" y="90" width="245" height="5" fill="#126c70"/>
+    <text class="kicker" x="78" y="117">FUENTE MAYORISTA</text>
+    <text class="heading" x="78" y="148">Conagua</text>
+    <text class="body" x="78" y="170">Infraestructura de abasto</text>
+  </g>
+  <g>
+    <rect class="node" x="465" y="90" width="245" height="95" rx="2"/>
+    <rect x="465" y="90" width="245" height="5" fill="#126c70"/>
+    <text class="kicker" x="483" y="117">AUTORIDAD DE CDMX</text>
+    <text class="heading" x="483" y="148">SEGIAGUA</text>
+    <text class="body" x="483" y="170">Sistema urbano de agua</text>
+  </g>
+  <g>
+    <rect class="node" x="870" y="90" width="245" height="95" rx="2"/>
+    <rect x="870" y="90" width="245" height="5" fill="#d66d52"/>
+    <text class="kicker" x="888" y="117">GOBIERNO LOCAL</text>
+    <text class="heading" x="888" y="148">Alcaldía</text>
+    <text class="body" x="888" y="170">Atención y red secundaria</text>
+  </g>
+
+  <!-- Fila de operación -->
+  <g>
+    <rect class="node-alt" x="60" y="305" width="245" height="95" rx="2"/>
+    <text class="kicker" x="78" y="334">CONDICIÓN ESTRUCTURAL</text>
+    <text class="heading" x="78" y="363">Fugas y caudal</text>
+    <text class="body" x="78" y="386">Afectan disponibilidad</text>
+    <path class="flow-dash" d="M305 355H465" style="marker-end:url(#arrow-teal)"/>
+  </g>
+  <g>
+    <rect class="node" x="465" y="305" width="245" height="95" rx="2"/>
+    <rect x="465" y="305" width="245" height="5" fill="#126c70"/>
+    <text class="kicker" x="483" y="334">INFRAESTRUCTURA</text>
+    <text class="heading" x="483" y="365">Tanques y red</text>
+    <text class="body" x="483" y="388">Distribución por horarios</text>
+  </g>
+  <g>
+    <rect class="node" x="870" y="305" width="245" height="95" rx="2"/>
+    <rect x="870" y="305" width="245" height="5" fill="#d66d52"/>
+    <text class="kicker" x="888" y="334">RESPUESTA A CORTES</text>
+    <text class="heading" x="888" y="365">Pipas gratuitas</text>
+    <text class="body" x="888" y="388">Reparto programado</text>
+  </g>
+
+  <!-- Fila de experiencia e información -->
+  <g>
+    <rect class="node-alt" x="60" y="506" width="245" height="95" rx="2"/>
+    <text class="kicker" x="78" y="535">INDICADORES AGREGADOS</text>
+    <text class="heading" x="78" y="565">Cobertura, viajes</text>
+    <text class="body" x="78" y="588">No miden horas por hogar</text>
+  </g>
+  <g>
+    <rect class="node-dark" x="465" y="506" width="245" height="95" rx="2"/>
+    <text class="kicker kicker-light" x="483" y="535">EXPERIENCIA DIRECTA</text>
+    <text class="heading heading-light" x="483" y="565">Hogares</text>
+    <text class="body body-light" x="483" y="588">Uso, espera, almacenamiento</text>
+  </g>
+  <g>
+    <rect class="node-alt" x="870" y="506" width="245" height="95" rx="2"/>
+    <text class="kicker" x="888" y="535">SOSTENIMIENTO</text>
+    <text class="heading" x="888" y="565">Recursos públicos</text>
+    <text class="body" x="888" y="588">Operación de reparto</text>
+  </g>
+  <text class="body" x="60" y="648">Línea continua: suministro u operación</text>
+  <text class="body" x="60" y="666">Línea discontinua: coordinación, reportes o límite de información</text>
+</svg>
+
